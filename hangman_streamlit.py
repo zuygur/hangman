@@ -52,7 +52,7 @@ if not st.session_state.finished:
             st.session_state.guesses.append(harf)
             if harf not in st.session_state.word:
                 st.session_state.attempts -= 1
-            st.experimental_rerun()
+            st.rerun()
 
 # Yeniden başlat
 if st.button("🔁 Yeni Oyun"):
